@@ -1,5 +1,4 @@
-package jp.ac.chitose.db_prac;8
-
+package jp.ac.chitose.db_prac;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;

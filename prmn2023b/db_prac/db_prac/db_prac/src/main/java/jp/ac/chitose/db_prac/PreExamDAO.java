@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PreExamDAO {
-    private static final String URL = "~/h2db/db_prac;Mode=PostgreSQL;AUTO_SERVER=TRUE;";
+    private static final String URL = "jdbc:h2:~/h2db/db_prac;Mode=PostgreSQL;AUTO_SERVER=TRUE;";
     private static final String USER_NAME = "b2222520";
     public static final String USER_PASS = "Yosh!8740620";
 
-    public List<PreExam> selectpreExams(int lessThan) throws SQLException {
+    public List<PreExam> selectPreExams(int lessThan) throws SQLException {
         List<PreExam> returning = new ArrayList<>();
         String SQL = "select * from 学生情報 where ? < 得点 ";
 
